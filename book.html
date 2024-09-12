@@ -34,26 +34,41 @@
             color: black;
         }
         .container {
-            width: 80%;
+            width: 60%;
             margin: 20px auto;
             background-color: #fff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         h1 {
             text-align: center;
             color: #333;
         }
+        p {
+            font-size: 16px;
+            color: #555;
+            text-align: center;
+        }
         ul {
             list-style-type: none;
             padding: 0;
+            margin: 20px 0;
         }
         li {
-            background-color: #f4f4f4;
-            margin: 5px 0;
-            padding: 10px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
             border: 1px solid #ddd;
-            border-radius: 4px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+        li strong {
+            width: 200px;
+            color: #333;
         }
         .next-link {
             text-align: center;
@@ -63,6 +78,7 @@
             color: #5cb85c;
             text-decoration: none;
             font-weight: bold;
+            font-size: 18px;
         }
         .next-link a:hover {
             text-decoration: underline;
@@ -85,12 +101,12 @@
         <p>Thank you for booking with us!</p>
         <p>Here are the details of your reservation:</p>
         <ul>
-            <li><strong>Departure Station:</strong> [Departure Station]</li>
-            <li><strong>Destination Station:</strong> [Destination Station]</li>
-            <li><strong>Travel Date:</strong> [Travel Date]</li>
-            <li><strong>Passenger Name:</strong> [Passenger Name]</li>
-            <li><strong>Passenger Age:</strong> [Passenger Age]</li>
-            <li><strong>Email Address:</strong> [Email Address]</li>
+            <li><strong>Departure Station:</strong> <span>[Departure Station]</span></li>
+            <li><strong>Destination Station:</strong> <span>[Destination Station]</span></li>
+            <li><strong>Travel Date:</strong> <span>[Travel Date]</span></li>
+            <li><strong>Passenger Name:</strong> <span>[Passenger Name]</span></li>
+            <li><strong>Passenger Age:</strong> <span>[Passenger Age]</span></li>
+            <li><strong>Email Address:</strong> <span>[Email Address]</span></li>
         </ul>
         <div class="next-link">
             <a href="contact.html">Proceed to Next Page</a>
