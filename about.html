@@ -1,145 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-            position: relative;
-        }
-        .header img {
-            width: 80px;
-            height: auto;
-            position: absolute;
-            top: 50%;
-            left: 20px;
-            transform: translateY(-50%);
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: white;
-        }
-        .nav {
-            background-color: #444;
-            overflow: hidden;
-        }
-        .nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        .nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            text-align: center;
-            color: #333;
-        }
-        p {
-            line-height: 1.6;
-            color: #666;
-            text-align: justify;
-        }
-        .team {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin-top: 30px;
-        }
-        .team-member {
-            flex: 1 1 30%;
-            background-color: #e7e7e7;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .team-member h3 {
-            margin-top: 0;
-            color: #333;
-        }
-        .team-member p {
-            font-size: 16px;
-            color: #777;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            font-size: 14px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header and Navigation Styles */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Main container */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2em;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 40px;
+            font-size: 1.5em;
+        }
+
+        p {
+            text-align: center;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Team Section */
+        .team {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .team-member {
+            background-color: #f9f9f9;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member h3 {
+            color: #333;
+        }
+
+        .team-member p {
+            color: #777;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 30px;
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* Links */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <div class="header">
-        <img src="https://via.placeholder.com/80x80.png?text=Logo" alt="logo">
-        <h1>Train Ticket Reservation System</h1>
-    </div>
-    <div class="nav">
-        <a href="homepage.html">Home</a>
-        <a href="reservation.html">Reserve Ticket</a>
-        <a href="book.html">Reservation Details</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="about.html">About Us</a>
-    </div>
-    <div class="container">
-        <h1>About Us</h1>
-        <p>Welcome to the Train Ticket Reservation System. We are dedicated to providing a seamless and convenient way for you to book your train tickets online. Our system allows you to easily select your departure and destination stations, choose your travel dates, and enter your passenger details, all from the comfort of your home.</p>
-        <p>We aim to make your train travel experience as smooth and enjoyable as possible. If you have any questions or need assistance, please feel free to <a href="contact.html">contact us</a>.</p>
-        
-        <h2>Our Mission</h2>
-        <p>Our mission is to revolutionize the way people book train tickets by offering a user-friendly, efficient, and reliable platform. We strive to provide the best customer service and continuously improve our system to meet the needs of our users.</p>
-        
-        <h2>Meet the Team</h2>
-        <div class="team">
-            <div class="team-member">
-                <h3>John Doe</h3>
-                <p>CEO</p>
-            </div>
-            <div class="team-member">
-                <h3>Jane Smith</h3>
-                <p>CTO</p>
-            </div>
-            <div class="team-member">
-                <h3>Emily Johnson</h3>
-                <p>COO</p>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <p>&copy; 2024 Train Ticket Reservation System. All Rights Reserved.</p>
-    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Train Ticket Reservation System</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <a href="homepage.html">Home</a>
+        <a href="reservation.html">Reserve Ticket</a>
+        <a href="book.html">Reservation Details</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Welcome to the Train Ticket Reservation System. We are dedicated to providing a seamless and convenient way for you to book your train tickets online. Our system allows you to easily select your departure and destination stations, choose your travel dates, and enter your passenger details, all from the comfort of your home.</p>
+        <p>We aim to make your train travel experience as smooth and enjoyable as possible. If you have any questions or need assistance, please feel free to <a href="contact.html">contact us</a>.</p>
+
+        <!-- Mission Section -->
+        <h2>Our Mission</h2>
+        <p>Our mission is to revolutionize the way people book train tickets by offering a user-friendly, efficient, and reliable platform. We strive to provide the best customer service and continuously improve our system to meet the needs of our users.</p>
+
+        <!-- Team Section -->
+        <h2>Meet the Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <h3>John Doe</h3>
+                <p>CEO</p>
+            </div>
+            <div class="team-member">
+                <h3>Jane Smith</h3>
+                <p>CTO</p>
+            </div>
+            <div class="team-member">
+                <h3>Emily Johnson</h3>
+                <p>COO</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 Train Ticket Reservation System. All Rights Reserved.</p>
+    </div>
+
 </body>
 </html>
